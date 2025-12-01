@@ -11,7 +11,7 @@ file { 'C:/Jahnavi/Puppet-demo/mydir':
 # Create hello.txt with content
 file { 'C:/Jahnavi/Puppet-demo/hello.txt':
   ensure  => file,
-  content => "Hello Puppet!\n",
+  content => "Hello Puppet from bolt!\n",
   require => File['C:/Jahnavi/Puppet-demo/mydir'],
 }
 
